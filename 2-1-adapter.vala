@@ -35,5 +35,10 @@ class WildDogAdapter: Lion {
 }
 
 public int main (string[] args) {
+    var wild_dog = new WildDog ();
+    var wild_dog_adapter = new WildDogAdapter (wild_dog);
+
+    var hunter = new Hunter ();
+    hunter.hunt (wild_dog_adapter);
     return 0;
 }
