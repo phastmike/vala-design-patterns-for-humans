@@ -1,24 +1,25 @@
-public class Singleton : Object {
-    static Singleton? instance;
+public class President : Object {
+    static President? instance;
  
     // Private constructor
-    Singleton() {
+    private President () {
  
     }
  
     // Public constructor
-    public static Singleton get_instance() {
+    public static President get_instance () {
         if (instance == null) {
-            instance = new Singleton();
+            instance = new President ();
         }
         return instance;
     }
+
+    // No default clone or unserialize methods.
 }
  
-void main() {
-    Singleton a = Singleton.get_instance();
-    Singleton b = Singleton.get_instance();
-    if (a == b) {
-        print("Equal.\n");
-    }
+void main () {
+    President a = President.get_instance ();
+    President b = President.get_instance ();
+
+    print ((a == b).to_string () + "\n"); // true
 }
