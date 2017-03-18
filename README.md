@@ -38,7 +38,7 @@ To run the programs, do:
     ./build/<name of the pattern>
 ```
 ## Notes:
-Object cloning is a bit controversial and there's no native clone method on GLib.Object class. To simplify, a clone method was added to the example class. The Iterator pattern example depends on PHP SPL Iterable and on the Vala example I'll use LibGee. This was done merely to recreate the **PHP** examples into runnable **Vala** code. I avoided dependencies but to simplify I added a libgee dependency to allow the use of HashMaps, ArrayLists and Iterables.
+Object cloning is a bit controversial and there's no native clone method on GLib.Object class, so, to simplify, a clone method was added to the prototype example. The original PHP Iterator pattern example depends on SPL Iterable and on the Vala example I've used LibGee. This was done merely to recreate the **PHP** examples into runnable **Vala** code. I avoided dependencies but to simplify I added a libgee dependency to allow the use of HashMaps, ArrayLists and Iterables.
 
 ### Dependencies:
     - Valac
