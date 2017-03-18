@@ -6,7 +6,7 @@ class ChatRoom : Object, ChatRoomMediator {
     public void show_message (User user, string message) {
         var time = new DateTime.now_local ();
         var sender = user.get_name ();
-        print ("%s[%s]:%s\n", time.to_string (), sender, message);
+        print ("%s [%s]:%s\n", time.to_string (), sender, message);
     }
 }
 

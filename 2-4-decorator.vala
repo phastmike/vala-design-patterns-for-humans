@@ -68,15 +68,15 @@ public int main (string[] args) {
 
     some_coffee = new MilkCoffee (some_coffee);
     print ("%d\n", some_coffee.get_cost ()); // 12
-    print ("%s\n", some_coffee.get_description ());
+    print ("%s\n", some_coffee.get_description ()); // Simple Coffee, milk
 
     some_coffee = new WhipCoffee (some_coffee);
     print ("%d\n", some_coffee.get_cost ()); // 17
-    print ("%s\n", some_coffee.get_description ());
+    print ("%s\n", some_coffee.get_description ()); // Simple Coffee, milk, whip
 
     some_coffee = new VanillaCoffee (some_coffee);
     print ("%d\n", some_coffee.get_cost ()); // 20
-    print ("%s\n", some_coffee.get_description ());
+    print ("%s\n", some_coffee.get_description ()); // Simple Coffee, milk, vanilla
 
     return 0;
 }

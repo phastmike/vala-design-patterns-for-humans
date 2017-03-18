@@ -45,6 +45,12 @@ class Bitcoin : Account {
 }
 
 public int main (string[] args) {
+    // Let's prepare a chain like below
+    //      $bank->$paypal->$bitcoin
+    //
+    // First priority bank
+    //      If bank can't pay then paypal
+    //      If paypal can't pay then bit coin
     var bank = new Bank (100);
     var paypal = new Paypal (200);
     var bitcoin = new Bitcoin (300);

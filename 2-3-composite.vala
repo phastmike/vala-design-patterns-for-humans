@@ -15,8 +15,6 @@ interface Employee : Object {
     public float get_salary () {
         return _salary;
     } 
-
-    // Roles not well explained
 }
 
 
@@ -63,7 +61,6 @@ public int main (string[] args) {
     var jane = new Developer ("Jane", 10000);
 
     var organization = new Organization ();
-
     organization.add_employee (john);
     organization.add_employee (jane);
 

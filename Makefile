@@ -36,7 +36,7 @@ all:
 	valac -o $(bindir)/$(1_2_name) 1-2-$(1_2_name).vala
 	valac -o $(bindir)/$(1_3_name) 1-3-$(1_3_name).vala
 	valac -o $(bindir)/$(1_4_name) 1-4-$(1_4_name).vala
-	#valac -o $(bindir)/$(1_5_name) 1-5-$(1_5_name).vala
+	valac -o $(bindir)/$(1_5_name) 1-5-$(1_5_name).vala
 	valac -o $(bindir)/$(1_6_name) 1-6-$(1_6_name).vala
 	# (2)
 	valac -o $(bindir)/$(2_1_name) 2-1-$(2_1_name).vala
