@@ -38,7 +38,7 @@ To run the programs, do:
     ./build/<name of the pattern>
 ```
 ## Notes:
-Pattern Prototype (1-5) is not yet implemented. The object cloning is a bit controversial and there's no native clone method on GLib.Object class. The Iterator pattern is also not finished, it is running but not completed. This was done merely to recreate the **PHP** examples into running **Vala** code. I avoided dependencies but to simplify I added a libgee dependency to allow the use of HashMaps and ArrayLists.
+Object cloning is a bit controversial and there's no native clone method on GLib.Object class. To simplify, a clone method was added to the example class. The Iterator pattern is not finished, yet, it is running but not completed. This was done merely to recreate the **PHP** examples into runnable **Vala** code. I avoided dependencies but to simplify I added a libgee dependency to allow the use of HashMaps and ArrayLists.
 
 ### Dependencies:
     - Valac
