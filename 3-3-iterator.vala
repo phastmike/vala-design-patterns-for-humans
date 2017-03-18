@@ -1,4 +1,5 @@
 using Gee; 
+
 class RadioStation {
     protected float frequency;
 
@@ -11,9 +12,10 @@ class RadioStation {
     }
 }
 
-class StationList {
+class StationList : Object, Traversable <RadioStation>, Iterable<RadioStation> {
     protected ArrayList<RadioStation> stations = new ArrayList<RadioStation> ();
-    protected int counter;
+    
+    public delegate bool ForallFunc (owned RadioStation r);
 
     public void add_station (RadioStation station) {
         stations.add (station);
@@ -34,9 +36,18 @@ class StationList {
         return stations.size;
     }
 
-    // The example implements a already defined PHP iterator... not the best example...
-    // we are also using the LibGee ArrayList which implements a Iterator...Whatever...
-    // Real example would be to implement a Iterator from scratch...
+    public Type element_type {
+        get { return typeof (RadioStation); }
+    }
+
+    public bool @foreach (ForallFunc f) {
+        // ... 
+        return true;
+    }
+
+    public Iterator<RadioStation> iterator () {
+        return stations.iterator ();
+    }
 }
 
 public int main (string[] args) {
@@ -47,14 +58,16 @@ public int main (string[] args) {
     station_list.add_station (new RadioStation (102.0f));
     station_list.add_station (new RadioStation (103.2f));
     
-    // well we need the iterator
+    foreach (RadioStation r in station_list) {
+        print ("%f\n", r.get_frequency ());
+    }
 
     print ("We have %d stations\n", station_list.count ());
 
     station_list.remove_station (new RadioStation (89.0f));
 
     print ("We have %d stations\n", station_list.count ());
-
+    
     return 0;
 }    
 

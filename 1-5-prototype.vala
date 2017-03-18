@@ -1,4 +1,3 @@
-// CONTROVERSIAL SUBJECT ON OBJECT.CLONE ()
 class Sheep {
     protected string name;
     protected string category;
