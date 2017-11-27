@@ -48,9 +48,9 @@ class Organization {
     public float get_net_salaries () {
         float net_salary = 0;
 
-        employees.foreach ((employee) => {
+        foreach (var employee in employees) {
             net_salary += employee.get_salary ();
-        });
+        }
 
         return net_salary;
     }
