@@ -1,5 +1,7 @@
-# Adaptation of [Design Pattern for Humans](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md) to Vala
+# Adaptation of [Design Pattern for Humans](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md) to [Vala](https://en.wikipedia.org/wiki/Vala_(programming_language).
 Just an adaptation from the **PHP** examples to **Vala**, no goal on discussing, questioning or improving the indicated code.
+
+A Vala version of that same document is available [here](200~https://github.com/design-patterns-for-humans/vala).
 
 ## Numbering
 	1. Creational
