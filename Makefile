@@ -7,6 +7,7 @@ bindir = build
 1_4_name = builder
 1_5_name = prototype
 1_6_name = singleton
+1_6_1_name = another_singleton
 
 # 2 - Structural
 2_1_name = adapter
@@ -38,6 +39,7 @@ all:
 	valac -o $(bindir)/$(1_4_name) 1-4-$(1_4_name).vala
 	valac -o $(bindir)/$(1_5_name) 1-5-$(1_5_name).vala
 	valac -o $(bindir)/$(1_6_name) 1-6-$(1_6_name).vala
+	valac -o $(bindir)/$(1_6_1_name) 1-6-1-$(1_6_name).vala
 	# (2)
 	valac -o $(bindir)/$(2_1_name) 2-1-$(2_1_name).vala
 	valac -o $(bindir)/$(2_2_name) 2-2-$(2_2_name).vala
