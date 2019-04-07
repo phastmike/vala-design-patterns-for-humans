@@ -1,3 +1,5 @@
+[![build](https://travis-ci.org/phastmike/vala-design-patterns-for-humans.svg?branch=master)](https://travis-ci.org/phastmike/vala-design-patterns-for-humans)
+
 # Adaptation of [Design Pattern for Humans](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md) to [Vala](https://en.wikipedia.org/wiki/Vala_(programming_language)).
 Just an adaptation from the **PHP** examples to **Vala**, no goal on discussing, questioning or improving the indicated code.
 
