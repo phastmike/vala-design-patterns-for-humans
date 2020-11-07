@@ -65,8 +65,9 @@ clean:
 	rm -f $(bindir)/$(1_2_name)
 	rm -f $(bindir)/$(1_3_name)
 	rm -f $(bindir)/$(1_4_name)
-	###rm -f $(bindir)/$(1_5_name)
+	rm -f $(bindir)/$(1_5_name)
 	rm -f $(bindir)/$(1_6_name)
+	rm -f $(bindir)/$(1_6_1_name)
 	#
 	rm -f $(bindir)/$(2_1_name)
 	rm -f $(bindir)/$(2_2_name)
