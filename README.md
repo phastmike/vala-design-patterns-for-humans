@@ -34,12 +34,14 @@ A Vala version of that same document is available [here](https://github.com/desi
 	  10. Template Method
 ## Use
 Just do
+
 ```shell
-    make
+    $ make
 ```
 To run the programs, do:
+
 ```shell
-    ./build/<name of the pattern>
+    $ ./build/<name of the pattern>
 ```
 ## Notes:
 Object cloning is a bit controversial and there's no native clone method in GLib.Object class, so, to simplify, a clone method was added to the prototype example. The original PHP Iterator pattern example depends on SPL Iterable, so, in the Vala example I've used LibGee. This was done merely to recreate the **PHP** examples into runnable **Vala** code. I avoided dependencies but to simplify I added a libgee dependency to allow the use of HashMaps, ArrayLists and Iterables.
