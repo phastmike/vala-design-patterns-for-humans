@@ -1,40 +1,40 @@
 interface Employee : Object {
-    protected abstract string _name {protected get; protected set;}
-    protected abstract float _salary {protected get; protected set;}
+    protected abstract string pname {protected get; protected set;}
+    protected abstract float psalary {protected get; protected set;}
 
     // no overridable construct
     
     public string get_name () {
-        return _name;
+        return pname;
     }
 
     public void set_salary (float salary) {
-        _salary = salary;
+        psalary = salary;
     }
 
     public float get_salary () {
-        return _salary;
+        return psalary;
     } 
 }
 
 
 class Developer : Object, Employee {
-    protected string _name {protected get; protected set;}
-    protected float _salary {protected get; protected set;}
+    protected string pname {protected get; protected set;}
+    protected float psalary {protected get; protected set;}
 
     public Developer (string name, float salary) {
-        _name = name;
-        _salary = salary;
+        pname = name;
+        psalary = salary;
     }
 }
 
 class Designer : Object, Employee {
-    protected string _name {protected get; protected set;}
-    protected float _salary {protected get; protected set;}
+    protected string pname {protected get; protected set;}
+    protected float psalary {protected get; protected set;}
 
     public Designer (string name, float salary) {
-        _name = name;
-        _salary = salary;
+        pname = name;
+        psalary = salary;
     }
 }
 
