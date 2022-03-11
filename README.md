@@ -51,4 +51,4 @@ Object cloning is a bit controversial and there's no native clone method in GLib
     - GLib
     - Libgee (0.8)
     
-    Tested on Fedora 23, 25, 27 and 29.
+    Tested on Fedora 23, 25, 27, 29 and 35.
